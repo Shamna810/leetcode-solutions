@@ -1,3 +1,13 @@
+"""
+Notes:
+- State: dp[i][j] = does s[:i] match p[:j]?
+- '*' gives two choices: skip the "x*" pair (dp[i][j-2]) or
+  consume one more char if it matches (dp[i-1][j]).
+- Base case: empty string matches patterns like a*, a*b*, .*
+- Edge cases: "aa" vs "a" (false), "ab" vs ".*" (true)
+- Time: O(m*n), Space: O(m*n)
+"""
+
 # 10. Regular Expression Matching
 # Difficulty: Hard
 # Link: https://leetcode.com/problems/regular-expression-matching/
