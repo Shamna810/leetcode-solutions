@@ -1,3 +1,18 @@
+"""
+LeetCode 10: Regular Expression Matching (Hard)
+https://leetcode.com/problems/regular-expression-matching/
+
+Approach: Bottom-up dynamic programming
+- dp[i][j] = True if s[:i] matches p[:j]
+- If p[j-1] == '*': either skip "x*" (dp[i][j-2]) or, if x matches s[i-1],
+  consume one more char (dp[i-1][j])
+- Otherwise: characters must match (or pattern has '.') and dp[i-1][j-1] is True
+
+Time:  O(m * n)
+Space: O(m * n)
+"""
+
+
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
         m, n = len(s), len(p)
