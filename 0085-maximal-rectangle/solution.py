@@ -1,3 +1,17 @@
+"""
+LeetCode 85. Maximal Rectangle (Hard)
+
+Approach:
+    Treat each row as the base of a histogram. heights[j] is the number of
+    consecutive 1s ending at row i in column j. For every row, find the
+    largest rectangle in that histogram (LeetCode 84) using a monotonic
+    stack, and keep the best area seen.
+
+Complexity:
+    Time:  O(rows * cols) - each row is processed in linear time
+    Space: O(cols)        - heights array + stack
+"""
+
 from typing import List
 
 class Solution:
