@@ -1,7 +1,8 @@
 # LeetCode Solutions
 
-My solutions to LeetCode problems, organized by language and difficulty.
+My solutions to LeetCode problems, written in Python.
 
-| # | Problem | Difficulty | Solution | Technique |
-|---|---------|------------|----------|-----------|
-| 85 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | Hard | [Python](python/hard/0085-maximal-rectangle/solution.py) | Histogram + monotonic stack, DP |
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | Hard | [Python](0030-substring-with-concatenation-of-all-words.py) |
+| 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | Medium | [Python](0031-next-permutation.py) |
