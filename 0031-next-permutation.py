@@ -1,3 +1,19 @@
+"""
+LeetCode 31. Next Permutation
+Difficulty: Medium
+Link: https://leetcode.com/problems/next-permutation/
+
+Approach:
+1. Scan from the right to find the first index i where nums[i] < nums[i+1].
+2. If found, find the smallest value to the right of i that is greater
+   than nums[i], and swap the two.
+3. Reverse the suffix after i so it becomes the smallest possible order.
+   If no i was found, the whole array is reversed (wraps to the smallest).
+
+Time Complexity: O(n)
+Space Complexity: O(1) (in-place)
+"""
+
 from typing import List
 
 class Solution:
