@@ -1,3 +1,17 @@
+"""
+59. Spiral Matrix II (Medium)
+
+Approach: Boundary shrinking
+- Keep four boundaries: top, bottom, left, right.
+- Fill top row (L->R), right column (T->B), bottom row (R->L),
+  left column (B->T), then move each boundary inward.
+- The `if` checks before the last two loops prevent overwriting
+  cells when n is odd (center cell).
+
+Time:  O(n^2) - every cell is filled once
+Space: O(n^2) - output matrix (O(1) extra)
+"""
+
 from typing import List
 
 class Solution:
