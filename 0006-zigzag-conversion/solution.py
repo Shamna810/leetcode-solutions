@@ -1,3 +1,17 @@
+"""
+6. Zigzag Conversion (Medium)
+https://leetcode.com/problems/zigzag-conversion/
+
+Approach: Simulate the zigzag with one bucket per row.
+  - Walk through the string once, appending each character to the current row.
+  - Bounce direction when we reach the top row or the bottom row.
+  - Join all rows at the end.
+
+Time:  O(n)  - each character is visited once
+Space: O(n)  - the row buckets hold all n characters
+"""
+
+
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         # No zigzag possible: return the string as is
