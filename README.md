@@ -1,12 +1,15 @@
-\# LeetCode Solutions
+# LeetCode Solutions
 
+My LeetCode solutions in Python, organized by difficulty.
 
+## Solved Problems
 
-| # | Problem | Difficulty | Solution |
+| # | Title | Difficulty | Solution | Approach |
+|---|-------|------------|----------|----------|
+| 6 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | [Python](python/medium/0006_zigzag_conversion.py) | Row simulation, O(n); cycle-jump, O(n) |
 
-|---|---------|------------|----------|
+## Structure
 
-| 59 | Spiral Matrix II | Medium | \[Python](0059-spiral-matrix-ii/solution.py) |
-
-| 85 | Maximal Rectangle | Hard | \[Notes](0085-maximal-rectangle.txt) |
-
+    python/
+    ├── easy/
+    └── medium/
